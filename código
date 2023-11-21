@@ -1,0 +1,11 @@
+det=[]
+c1=0
+while c1<=8:
+ x=int(input("informe os 9 números da matriz:"))
+ if x==100:
+     x=int(input("informe o número para raiz:"))
+     x=x**(1/2)
+     
+ det.append(x)
+ c1+=1
+print(f"A determinante é igual a : {((det[0]*det[4]*det[8])+(det[1]*det[5]*det[6])+(det[2]*det[3]*det[7]))-((det[6]*det[4]*det[2])+(det[7]*det[5]*det[0])+(det[8]*det[3]*det[1]))}")
